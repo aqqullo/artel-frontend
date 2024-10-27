@@ -1,0 +1,504 @@
+@import url(../style/fonts.css);
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: " Styrene A Web ";
+    background-color: #000000;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   
+}
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/hero-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+@media (max-width: 800px) {
+    .container {
+        max-width: 100%;
+    }
+    h2 img {
+        margin-left: 250px;
+    }
+    h3 img {
+        margin-left: 100px;
+    }
+    .slep {
+        margin-left: 100px;
+    }
+    .images img:last-child {
+        display: none;
+    }
+    .justdoit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -100px;
+    }
+    .justdoit div:not(:first-child) {
+        margin-top: -300px;
+        margin-right: 30px;
+
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card .box  {
+       font-size: 16px;
+
+       
+    }
+    .card .box p {
+        font-size: 12px;
+    }
+    .card img {
+        display: none;
+
+    }
+    footer img {
+      position: relative;
+      left: -240px;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .contacts div:not(:first-child) {
+        margin-top: -140px;
+        margin-left: -40px;
+    }
+    .contacts div:nth-child(2){
+        margin-left: -100px;
+    }
+    .copy {
+        font-size: 18px;
+       margin-left: -250px;
+    }
+    .Vector {
+        margin-left: -400px;
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 20px 0;
+}
+
+header p {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+header img {
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    height: calc(100vh - 80px);
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.langs {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.langs li {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: grid;
+    place-items: center;
+
+}
+
+.langs li a {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 700;
+    opacity: 0.4;
+}
+
+.langs li.active {
+    background-color: #FFFFFF;
+}
+
+.langs li.active a {
+    opacity: 1;
+    color: #000000;
+    border-color: #FFFFFF;
+}
+.about2 {
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+h2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.just {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+
+}
+
+.nuqta {
+    position: relative;
+    width: 630px;
+    height: 650px;
+    top: -100px;
+    
+
+}
+.ateg {
+    position: absolute;
+    left: 200px;
+    
+    bottom: -700px;
+    width: 360px;
+    height: 331px;
+}
+.zebo:hover .ateg {
+    display: none;
+}
+.zebo {
+    background-color: #15171B;
+    width: 630px;
+    height: 450px;
+    align-items: center;
+
+   
+
+}
+.zebo:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+
+}
+.number {
+    color: #00D162;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+    left: 550px;
+}
+.history  {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+   
+}
+.sleep {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 140px;
+}
+.read-more  {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    left: 400px
+}
+h3 {
+    margin-bottom: 20px
+}
+.slep {
+    font-size: 24px;
+    font-weight: 300;
+
+}
+.Vector {
+    width: 800px;
+    height: 700px;
+    position: relative;
+    z-index: -6;
+    left: 560px;
+    top: -300px;
+   
+}
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.images img {
+    cursor: pointer;
+    width: 400px;
+
+}
+.images img:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1) rotateX(360deg);
+    
+}
+
+.justdoit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 80px;
+}
+
+.justdoit b  {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #00D162;
+   
+}
+.justdoit p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 300px;
+}
+h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.gorand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.gorand img {
+    cursor: pointer;
+    animation-name: frame;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: ease-in-out;
+
+    position: relative;
+    z-index: 1;
+
+
+}
+
+@keyframes frame {
+    0% {
+        transform: rotate(0deg);
+    }   
+
+    50% {
+        transform: rotate(360deg);
+    }      
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.products  {
+    width: 100%;
+    height: 100vh;
+    margin-top: -800px;
+  
+   
+}
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+   
+}
+.card img {
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+} 
+.card {
+    width: 45%;
+    height: 60vh;
+    background:linear-gradient(#2FAC73 , #15171B) ;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+   
+}
+.card p:first-child {
+   position: absolute;
+   right: -40px;
+   top: 100px;
+   transform: rotate(-90deg) translateX(500px);
+   z-index: 2;
+   transition: all 0.5s ease;
+   
+
+
+}
+.card:hover > p {
+    transform: rotate(90deg) translateX(0px);
+
+}
+
+.card:hover >  .box {
+    transform: translateY(0px);
+}
+.cure {
+    background: linear-gradient(#96ABD8 , #15171B);
+
+}
+.sure {
+    background: linear-gradient(#FB6169 , #15171B);
+}
+.cope {
+    background: linear-gradient(#C994B6 , #15171B);
+}
+.card .box {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    z-index: 1;
+    transform: translateY(400px);
+    transition: all 0.5s ease;
+}
+.card .box b {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.card .box p {
+    font-size: 20px;
+    font-weight: 300;
+}
+.card .box p:last-child {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 300px;
+}
+.card .box p:last-child:hover {
+    color: #00D162;
+    transition: all 0.5s ease;
+}
+footer {
+    margin-top: 400px;
+    background-color: #15171B;
+}
+footer img {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    margin-left: 350px;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 50px;
+   
+}
+.contacts b {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    
+}
+.contacts p {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 180px;
+}
+.copy {
+    position: relative;
+    left: 400px;
+    font-size: 24px;
+    font-weight: 400;
+    top: -40px;
+   
+
+}
+
+
+
+
+
+    
+
+
+
